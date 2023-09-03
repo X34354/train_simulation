@@ -1,0 +1,9 @@
+# To run the code in terminal
+
+python evaluate_pure_SpookyNet.py -nn Au_model.pth -i Au_particle.xyz --charge 1
+
+
+python evaluate_pure_SpookyNet.py -nn best_model.pth.tar -i Au_particle.xyz --charge 1
+
+
+python evaluate_pure_SpookyNet.py -nn pruebaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.pth -i Au_particle.xyz --charge 1
