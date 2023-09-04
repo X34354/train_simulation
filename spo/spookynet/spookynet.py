@@ -1015,18 +1015,18 @@ class SpookyNet(nn.Module):
 
             (optionally returns atomic properties)
         """
-        print('------------------Zzzzzzzzzzzzzzzzzzzzzz',Z.shape,
-        '------------------Qqqqqqqqqqqqqqq',Q.shape,
-        '------------------Sssssssssssss',S.shape,
-        '------------------R',R.shape,
-        '------------------idx_i',idx_i.shape,
-        '------------------idx_j',idx_j.shape,
-        '------------------cell',cell,
-        '------------------cell_offsets',cell_offsets,
-        '------------------num_batch',num_batch,
-        '------------------batch_seg',batch_seg,
-        '------------------create_graph',create_graph,
-        '---------------------------------')
+        #print('------------------Zzzzzzzzzzzzzzzzzzzzzz',Z.shape,
+        #'------------------Qqqqqqqqqqqqqqq',Q.shape,
+        #'------------------Sssssssssssss',S.shape,
+        #'------------------R',R.shape,
+        #'------------------idx_i',idx_i.shape,
+        #'------------------idx_j',idx_j.shape,
+        #'------------------cell',cell,
+        #'------------------cell_offsets',cell_offsets,
+        #'------------------num_batch',num_batch,
+        #'------------------batch_seg',batch_seg,
+        #'------------------create_graph',create_graph,
+        #'---------------------------------')
 
         #print('------------------Z',Z,
         #'------------------Q',Q,

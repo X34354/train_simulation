@@ -80,9 +80,9 @@ class ElectronicEmbedding(nn.Module):
         x (FloatTensor [N, num_features]):
             Atomic feature vectors.
         """
-        print('-----------------------------------X', x.shape,
-              '-----------------------------------E', E.shape,
-              '-----------------------------------batch_seg', batch_seg.shape,)
+        #print('-----------------------------------X', x.shape,
+        #       '-----------------------------------E', E.shape,
+        #      '-----------------------------------batch_seg', batch_seg.shape,)
         if batch_seg is None:  # assume a single batch
             batch_seg = torch.zeros(x.size(0), dtype=torch.int64, device=x.device)
         q = self.linear_q(x)  # queries
