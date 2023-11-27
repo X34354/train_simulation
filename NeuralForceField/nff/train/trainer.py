@@ -697,6 +697,7 @@ class Trainer:
             else:
                 val_loss += val_batch_loss
             for hook in self.hooks:
+                results['dipole'] = results['dipole'].flatten() 
                 hook.on_validation_batch_end(self, val_batch, results)
 
         if test:
