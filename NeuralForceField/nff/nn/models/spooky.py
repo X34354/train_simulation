@@ -257,6 +257,7 @@ class RealSpookyNet(SourceSpooky):
 
         self.to(self.float_dtype)
         self.output_key = params["output_key"]
+        #descomentar  para predecir dip
         self.dip_key = params["dip_key"]
         #self.charge_key = params["charge_key"]
 
@@ -344,7 +345,7 @@ class RealSpookyNet(SourceSpooky):
             self.dip_key: dipole,
             "atom_features": f,
             "atomic_energies": ea * const.EV_TO_KCAL_MOL,
-            #self.charge_key: qa,
+            self.charge_key: qa,
             "atomic_zbl": ea_rep * const.EV_TO_KCAL_MOL,
             "atom_vwd": ea_vdw * const.EV_TO_KCAL_MOL,
             "polarizabilities": pa,
